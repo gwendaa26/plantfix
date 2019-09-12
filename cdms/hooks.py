@@ -10,13 +10,14 @@ app_icon = "octicon octicon-repo"
 app_color = "purple"
 app_email = "support@smartconsultant.co"
 app_license = "MIT"
-app_include_css = "/assets/cdms/css/hide_help_menu.css"
-app_include_js = "/assets/cdms/js/hide_help_menu.js"
+app_include_css = "/assets/cdms/css/cdms.css"
+app_include_js = "/assets/cdms/js/cdms.js"
 
 fixtures = [
     {"dt":"Custom Field", "filters": [["dt", "in", ("BOM", "Warehouse", "Customer", "Item", "Company", "Supplier", "Address", "Purchase Receipt", "Purchase Receipt Item", "Stock Entry", "Stock Entry Detail")]]}, 
     "Custom Script", "Property Setter"
 ]
+
 
 # Includes in <head>
 # ------------------

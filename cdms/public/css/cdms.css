@@ -1,0 +1,18 @@
+.layout-side-section .module-link[data-name="Learn"] {display:none !important}
+
+.erpnext-icon {
+  width: 75px !important; 
+}
+
+.app-icon {
+  padding: 50px !important;
+  border-radius: 5px !important;
+}
+
+#icon-grid {
+  max-width: 830px !important;
+}
+
+.app-icon i {
+  font-size: 40px !important;
+}
