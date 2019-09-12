@@ -1,8 +1,8 @@
 {
-    "js/hide_help_menu.js": [
-        "public/js/hide_help_menu.js"
+    "js/cdms.js": [
+        "public/js/cdms.js"
     ],
-    "js/hide_help_menu.css": [
-        "public/css/hide_help_menu.css"
+    "css/cdms.css": [
+        "public/css/cdms.css"
     ]
 }
