@@ -1,0 +1,8 @@
+{
+    "js/hide_help_menu.js": [
+        "public/js/hide_help_menu.js"
+    ],
+    "js/hide_help_menu.css": [
+        "public/css/hide_help_menu.css"
+    ]
+}

@@ -1,0 +1,14 @@
+[
+ {
+  "docstatus": 0, 
+  "doctype": "Custom Script", 
+  "dt": "Stock Entry", 
+  "modified": "2019-06-12 09:33:29.335083", 
+  "name": "Stock Entry-Client", 
+  "parent": null, 
+  "parentfield": null, 
+  "parenttype": null, 
+  "script": "frappe.ui.form.on(\"Stock Entry\", {\n\t\"purpose\": function(frm) {\n\t\tif (frm.doc.purpose==\"Material Receipt\") {\n\t\t\tfrm.set_df_property(\"bc_type\", \"options\", \n\t\t\t\t[\n\t\t\t\t\t\"\",\n\t\t\t\t\t\"BC 2.3\",\n\t\t\t\t\t\"BC 2.6.2\",\n\t\t\t\t\t\"BC 2.7\",\n\t\t\t\t\t\"BC 4.0\",\n\t\t\t\t\t\"PPFTZ02\"\n\t\t\t\t]\n\t\t\t);\n\t\t}\n\t\telse {\n\t\t\tfrm.set_df_property(\"bc_type\", \"options\", [ \"\" ]);\n\t\t}\n\t}\n});\n\nfrappe.ui.form.on(\"Stock Entry\", {\n\t\"bc_type\": function(frm) {\n\t\tif (frm.doc.bc_type==\"\") {\n\t\t\tfrm.set_df_property(\"bc_type\", \"reqd\", 0);\n\t\t\tfrm.set_df_property(\"bc_number\", \"reqd\", 0);\n\t\t\tfrm.set_df_property(\"bc_date\", \"reqd\", 0);\n\t\t\tfrm.set_df_property(\"bc_supplier\", \"reqd\", 0);\n\t\t}\n\t\telse {\n\t\t\tfrm.set_df_property(\"bc_type\", \"reqd\", 1);\n\t\t\tfrm.set_df_property(\"bc_number\", \"reqd\", 1);\n\t\t\tfrm.set_df_property(\"bc_date\", \"reqd\", 1);\n\t\t\tfrm.set_df_property(\"bc_supplier\", \"reqd\", 1);\n\t\t}\n\t}\n});", 
+  "script_type": "Client"
+ }
+]
