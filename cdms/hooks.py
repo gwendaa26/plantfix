@@ -18,6 +18,10 @@ fixtures = [
     "Custom Script", "Property Setter"
 ]
 
+website_context = {
+	"favicon": 	"/assets/cdms/images/favicon.ico",
+	"splash_image": "/assets/cdms/images/Logom.png"
+}
 
 # Includes in <head>
 # ------------------

@@ -1,18 +1,28 @@
 .layout-side-section .module-link[data-name="Learn"] {display:none !important}
 
 .erpnext-icon {
-  width: 75px !important; 
+  width: 84px !important; 
 }
 
 .app-icon {
-  padding: 50px !important;
-  border-radius: 5px !important;
+  padding: 40px !important;
+  border-radius:60px !important;
 }
 
-#icon-grid {
-  max-width: 830px !important;
+.case-label {
+  color: #442B48 !important;
+  text-shadow: 0px 0px !important;
 }
 
-.app-icon i {
-  font-size: 40px !important;
+#page-desktop {
+  background-color: #f7f7f7 !important;
+  padding-top: 50px;
+}
+
+.case-wrapper {
+  width: 160px !important;
+  height: 165px !important;
+}
+.page-container {
+  margin-top: 40px;
 }
